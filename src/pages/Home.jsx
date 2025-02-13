@@ -10,15 +10,6 @@ function Home() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
 
-
-  const getPopularMovies = async () => {
-  const response = await axious.get("");
-  const data  =  await response.json();
-  return data ;
-  
-}
-
-
   useEffect(() => {
     const loadPopularMovies = async () => {
       try {
